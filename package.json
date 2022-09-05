@@ -1,0 +1,14 @@
+{
+  "author": "Ben Martin",
+  "name": "pgn-to-simple",
+  "version": "1.0.0",
+  "description": "Converts chess games from pgn format to simple data structures comprised of FEN strings & UCI/SAN moves",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "license": "MIT",
+  "type": "module",
+  "packageManager": "pnpm@7.10.0"
+}
