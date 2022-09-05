@@ -11,18 +11,20 @@ export function pgnToSimple(pgnText) {
 
   chess.reset();
 
+  const startPosition = chess.fen();
+
   const moves = history.map(move => {
     const fromPosition = chess.fen();
     chess.move(move);
     return {
-      toPosition: chess.fen(),
-      move,
+      ...move,
       fromPosition,
+      toPosition: chess.fen(),
     };
   });
 
   return {
-    startPosition: chess.fen(),
+    startPosition,
     moves
   }
 }
