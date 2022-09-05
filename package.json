@@ -5,10 +5,13 @@
   "description": "Converts chess games from pgn format to simple data structures comprised of FEN strings & UCI/SAN moves",
   "main": "main.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node main.js"
   },
   "keywords": [],
   "license": "MIT",
+  "dependencies": {
+    "chess.js": "^0.13.4"
+  },
   "type": "module",
   "packageManager": "pnpm@7.10.0"
 }
